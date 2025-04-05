@@ -3,127 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Matriz 2x3</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            color: #333;
+            margin: 20px;
         }
         
-        .container {
-            max-width: 1000px;
+        .matriz {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
         }
         
-        header {
+        .imagem {
+            border: 1px solid #ddd;
+            padding: 10px;
             text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
+        }
+        
+        .imagem img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .linha-texto {
+            border: 1px solid #eee;
+            padding: 15px;
+            background-color: #f9f9f9;
         }
         
         h1 {
-            color: #2c3e50;
-        }
-        
-        .projeto {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .projeto img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 15px;
-        }
-        
-        .projeto-link {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 8px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        .projeto-link:hover {
-            background-color: #2980b9;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        
-        th {
-            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://i.imgur.com/4zSgp8i.png" alt="Foto de perfil" width="150" style="border-radius: 50%;">
-            <h1>Meu nome é John e estudo Programação</h1>
-            <p>Sou estudante em Front-end e desenvolvimento web.</p>
-        </header>
+    <h1>Matriz 2x3</h1>
+    
+    <div class="matriz">
+        <!-- Primeira linha - 3 imagens -->
+        <div class="imagem">
+            <img src="https://i.imgur.com/jy5nhUT.png" alt="Imagem 1">
+            <p>Descrição da Imagem 1</p>
+        </div>
         
-        <section>
-            <h2 style="text-align: center;">Meus projetos</h2>
-            
-            <div class="projeto">
-                <img src="https://i.imgur.com/qd65BUd.png" alt="Projeto 1">
-                <h3>Projeto 1</h3>
-                <p>Descrição do projeto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="projeto-link" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
-            </div>
-            
-            <div class="projeto">
-                <img src="https://via.placeholder.com/800x400" alt="Projeto 2">
-                <h3>Projeto 2</h3>
-                <p>Descrição do projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="projeto-link" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
-            </div>
-            
-            <h3 style="text-align: center;">Galeria de Projetos</h3>
-            <table>
-                <tr>
-                    <th>Projeto</th>
-                    <th>Imagem</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Projeto A</td>
-                    <td><img src="https://via.placeholder.com/100" alt="Projeto A" width="100"></td>
-                    <td><a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a></td>
-                </tr>
-                <tr>
-                    <td>Projeto B</td>
-                    <td><img src="https://via.placeholder.com/100" alt="Projeto B" width="100"></td>
-                    <td><a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a></td>
-                </tr>
-            </table>
-        </section>
+        <div class="imagem">
+            <img src="https://i.imgur.com/VlWkeio.png" alt="Imagem 2">
+            <p>Descrição da Imagem 2</p>
+        </div>
+        
+        <div class="imagem">
+            <img src="https://i.imgur.com/UTtm4hI.png" alt="Imagem 3">
+            <p>Descrição da Imagem 3</p>
+        </div>
+        
+        <!-- Segunda linha - 3 linhas de texto -->
+        <div class="linha-texto">
+            <h3>Texto 1</h3>
+            <p>https://www.urlvoid.com/</p>
+        </div>
+        
+        <div class="linha-texto">
+            <h3>Texto 2</h3>
+            <p>https://www.youtube.com/</p>
+        </div>
+        
+        <div class="linha-texto">
+            <h3>Texto 3</h3>
+            <p>https://www.youtube.com/</p>
+        </div>
     </div>
 </body>
 </html>
